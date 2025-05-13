@@ -1,6 +1,7 @@
 # Поддержать разработчика:
-Monobank: [Банка на лавалапку](https://send.monobank.ua/jar/22P9VfWZVd)
-USDT TRC20: TR8AFsnjrGMzi8zLJmUJZUHbqdrQwaEXVT 
+- Monobank: [Банка на лавалапку](https://send.monobank.ua/jar/22P9VfWZVd)
+
+- USDT TRC20: TR8AFsnjrGMzi8zLJmUJZUHbqdrQwaEXVT 
 
 # Мониторинг платежей Monobank и отправка уведомлений в Telegram
 
