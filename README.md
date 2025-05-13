@@ -1,5 +1,4 @@
----
-Поддержать разработчика:
+# Поддержать разработчика:
 Monobank: [Банка на лавалапку](https://send.monobank.ua/jar/22P9VfWZVd)
 USDT TRC20: TR8AFsnjrGMzi8zLJmUJZUHbqdrQwaEXVT 
 
