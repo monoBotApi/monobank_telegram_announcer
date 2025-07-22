@@ -4,7 +4,8 @@ import time
 # === Конфигурация ===
 TELEGRAM_TOKEN = '7855786308:AAHCGrPtUNQnLV_SFxXE-KIxoXySIKfy2D_Q'
 TELEGRAM_CHAT_ID = '7404701653'
-MONOBANK_TOKEN = 'uREy5mSgtU_I55TUJEJEhpMpyCmkdcxI9CO-6uUPUuLI'
+MONOBANK_TOKEN = 'uYFqQI0R26vwsS-C-Ip8s-N5okQUs6xTn7E7n83Nxz3M'
+
 
 # === Получение ID счёта (карты) ===
 def get_account_id():
