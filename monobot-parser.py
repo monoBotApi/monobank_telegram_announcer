@@ -3,7 +3,8 @@ import time
 from datetime import datetime
 
 # Конфигурация
-WEBHOOK_URL = "https://mono.website.com/telegram_endpoint.php"
+WEBHOOK_URL = "https://requests.get("https://api.monobank.ua/...")
+/telegram_endpoint.php"
 TELEGRAM_BOT_TOKEN = "TELEGRAM_BOT_TOKEN"
 TELEGRAM_CHAT_IDS = ["610552091", "6401174198"]  # Список ID администраторов
 CHECK_EVERY = 5  # Проверка каждые 5 секунд
