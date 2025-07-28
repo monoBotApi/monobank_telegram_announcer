@@ -18,7 +18,7 @@ def get_account_id():
 print("Ответ от Monobank:", data)
 
     # Проверка, есть ли ключ 'accounts'
-    def get_account_id():
+   def get_account_id():
     headers = {"X-Token": MONOBANK_TOKEN}
     r = requests.get("https://api.monobank.ua/personal/client-info", headers=headers)
     data = r.json()
@@ -30,7 +30,6 @@ print("Ответ от Monobank:", data)
         return None
 
     return data["accounts"][0]["id"]
-
 
 # === Отправка в Telegram ===
 def send_to_telegram(message):
