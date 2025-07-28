@@ -9,22 +9,15 @@ MONOBANK_TOKEN = 'u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM'
 
 
 # === Получение ID счёта (карты) ===
-def get_account_id():
-    headers = {"X-Token": 'u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM'
-}
-    r = requests.getr = requests.get("https://api.monobank.ua/personal/client-info?", headers=headers)
 
-    data = r.json()
-print("Ответ от Monobank:", data)
 
     # Проверка, есть ли ключ 'accounts'
-   def get_account_id():
+  def get_account_id():
     headers = {"X-Token": MONOBANK_TOKEN}
     r = requests.get("https://api.monobank.ua/personal/client-info", headers=headers)
     data = r.json()
     print("Ответ от Monobank:", data)
 
-    # Проверка, есть ли ключ 'accounts'
     if "accounts" not in data or not data["accounts"]:
         print("❌ Ошибка: ключ 'accounts' отсутствует или пуст. Ответ:", data)
         return None
