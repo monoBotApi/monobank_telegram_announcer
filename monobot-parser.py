@@ -12,7 +12,7 @@ MONOBANK_TOKEN = 'u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM'
 
 
     # Проверка, есть ли ключ 'accounts'
-  def get_account_id():
+def get_account_id():
     headers = {"X-Token": MONOBANK_TOKEN}
     r = requests.get("https://api.monobank.ua/personal/client-info", headers=headers)
     data = r.json()
@@ -23,7 +23,6 @@ MONOBANK_TOKEN = 'u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM'
         return None
 
     return data["accounts"][0]["id"]
-
 # === Отправка в Telegram ===
 def send_to_telegram(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
