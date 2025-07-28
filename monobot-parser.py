@@ -4,13 +4,13 @@ import time
 # === Конфигурация ===
 TELEGRAM_TOKEN = '7855786308:AAHCGrPtUNQnLV_SFxXE-KIxoXySIKfy2D_Q'
 TELEGRAM_CHAT_ID = '7404701653'
-MONOBANK_TOKEN = MONOBANK_TOKEN = "u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM"
+MONOBANK_TOKEN = 'u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM'
 
 
 
 # === Получение ID счёта (карты) ===
 def get_account_id():
-    headers = {"X-Token": "u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM"
+    headers = {"X-Token": 'u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM'
 }
     r = requests.get("https://api.monobank.ua/personal/client-info", headers=headers)
     data = r.json()
