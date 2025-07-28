@@ -4,15 +4,24 @@ import time
 # === Конфигурация ===
 TELEGRAM_TOKEN = '7855786308:AAHCGrPtUNQnLV_SFxXE-KIxoXySIKfy2D_Q'
 TELEGRAM_CHAT_ID = '7404701653'
-MONOBANK_TOKEN = 'uYFqQI0R26vwsS-C-Ip8s-N5okQUs6xTn7E7n83Nxz3M'
+MONOBANK_TOKEN = MONOBANK_TOKEN = 'u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM'
+
 
 
 # === Получение ID счёта (карты) ===
 def get_account_id():
-    headers = {"X-Token": MONOBANK_TOKEN}
+    headers = {"X-Token": u_R7J6ZdvTxgHZUffaWYeGr5GLip4UkjYpzsfUmK4uM
+}
     r = requests.get("https://api.monobank.ua/personal/client-info", headers=headers)
     data = r.json()
+
+    # Проверка, есть ли ключ 'accounts'
+    if "accounts" not in data or not data["accounts"]:
+        print("❌ Ошибка: ключ 'accounts' отсутствует или пуст. Ответ:", data)
+        return None
+
     return data["accounts"][0]["id"]
+
 
 # === Отправка в Telegram ===
 def send_to_telegram(message):
